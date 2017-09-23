@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/base/dimensions.css">
+    <link rel="stylesheet" href="css/base/ui.css">
+    <title>Vault</title>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="brand"></div>
+            <div class="navbar">
+                <div class="nav_item">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown" id="toggle_push_top">
+                                <i class="fa fa-dashcube"></i>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="notifications_drop" aria-expanded="false">
+                                <i class="fa fa-bell"></i>
+                                <span class="notifications-badge badge-error">5</span>        
+                            </a>
+                        </li>
+                        <li class="dropdown task tasks-menu">
+                            <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown" id="task_drop" aria-expanded="false">
+                                <i class="fa fa-flag"></i>
+                                <span class="notifications-badge badge-default">19</span>                
+                            </a>
+                        </li>
+                        <li class="dropdown user user-menu">
+                            <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown" id="profile_drop" aria-expanded="false">
+                                <i class="fa fa-user"></i>
+                            </a>
+                        </li>
+                    </ul>
+                      </div>
+                       
+                    </div>
+                </header>
+                
+        
+                <section class="maincontent">
+                    <!-- menu section -->
+                    <section class="menu_navigation">
+                        <div class="menu">
+                            <div class="menu_item" title="Components">
+                                <input class="toggle" name="menu_group" id="component_toggle" type="radio" checked />
+                                <div class="expander">
+                                    <label for="component_toggle"><i class="menu_icon fa fa-microchip"></i> <span class="menu_text">Components</span></label>
+                                </div>
+                            </div>
+                            <div class="menu_item" title="Users">
+                                <input class="toggle" name="menu_group" id="user_toggle" type="radio" />
+                                <div class="expander">
+                                    <label for="user_toggle"><i class="menu_icon fa fa-user-circle"></i> <span class="menu_text">Users</span></label>
+                                </div>
+                            </div>
+                            <div class="menu_item" title="Help">
+                                <input class="toggle" name="menu_group" id="help_toggle" type="radio">
+                                <div class="expander">
+                                    <label for="help_toggle"><i class="menu_icon fa fa-question-circle "></i> <span class="menu_text">Help</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- sidebar -->
+                    <section class="sidebar">
+                        <div class="nav_tab">
+                        <!-- component tab -->
+                            <ul>
+                                <li class="active">
+                                    <a href="#c_managers"><div class="icon"><i class="fa fa-dashboard"></i></div><span>Managers</span></a>
+                                </li>
+                                <li>
+                                    <a href="#c_creator"><div class="icon"><i class="fa fa-plus"></i></div><span>Creator</span></a>
+                                </li>
+                                <li>
+                                    <a href="#c_help"><div class="icon"><i class="fa fa-question"></i></div><span>Guidelines</span></a>
+                                </li>
+                            </ul>             
+                        </div>
+                        <!-- component info -->
+                        <!-- :TO DO making it also expandable -->
+                        <div class="sidebar_content ">
+                            <div class="section_container"></div>
+                            <div id="c_managers" class="general">
+                                <div class="info">
+                                    <i class="fa fa-microchip banner"></i>
+                                    <h2>Component Managers</h2>
+                                    <span>Description Text here.. The Description from the project</span>
+                                    <h4>Active Members</h4>
+                                    <div class="btn-grp">
+                                        <a href="#" class="btn button--green">
+                                            <div class="c-ripple js-ripple">
+                                                <span class="c-ripple__circle"></span>
+                                            </div>
+                                            <i class="fa fa-wrench"></i>Edit
+                                        </a>
+                                        <a href="#" class="btn btn-big button--red">
+                                            <div class="c-ripple js-ripple">
+                                                <span class="c-ripple__circle"></span>
+                                            </div>
+                                            <i class="fa fa-trash"></i>Delete
+                                        </a>
+                                    </div> 
+                                </div>                
+                            </div>
+                            <div id="c_creator" class="list">
+                                <div class="section_nav">
+                                    <ul>
+                                        <li class="active"><a><i class="fa fa-th"></i><span>UI</span></a></li>
+                                        <hr class="o-divider">
+                                        <li><a></a><i class="fa fa-code"></i><span>Functions</span></a></li>
+                                        <hr class="o-divider">
+                                        <li><a><i class="fa fa-code"></i><span>Art</span></a></li>
+                                        <hr class="o-divider">
+                                        <li><a><i class="fa fa-code"></i><span>Design</span></a></li>
+                                        <hr class="o-divider">
+                                        <li><a><span>Marketing</span></a></li>
+                                        <hr class="o-divider">
+                                        <li><a><i class="fa fa-code"></i><span>Writing</span></a></li>
+                                        <hr class="o-divider">
+                                        <li><a><i class="fa fa-code"></i><span>Idea</span></a></li>
+                                        <hr class="o-divider">
+                                        <li><a><i class="fa fa-code"></i><span>Bug</span></a></li>
+                                        <hr class="o-divider">
+                                        <li><a><i class="fa fa-code"></i><span>Reports</span></a></li>
+                                        <hr class="o-divider">
+                                    </ul>
+                                    <div class="btn-grp" style="text-align:center">
+                                        <a href="#" id="bb" class="btn button--green ripple">
+                                            <div class="c-ripple js-ripple">
+                                                <span class="c-ripple__circle"></span>
+                                            </div>
+                                            <i class="fa fa-folder-open-o"></i>Load
+                                        </a>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div id="milestone" class="general">
+                                <span>MileStone here</span>
+                                <select name='state' style='height: 45px; font-family:Arial, FontAwesome;'>
+                                    <option value='' default disabled>Select One....</option>
+                                    <option value='All states'>&#xf039; &nbsp; All States</option>
+                                    <option value='enabled' style='color:green;'>&#xf00c; &nbsp; Enabled</option>
+                                    <option value='paused' style='color:orange;'>&#xf04c; &nbsp; Paused</option>
+                                    <option value='archived' style='color:red;'>&#xf023; &nbsp; Archived</option>
+                                </select>
+                            </div>
+                            <div id="settings" class="general">
+                                <span>Settings</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- content in the middle wrapper -->
+                    <section class="wrapper">
+                        <div class="controls">
+                            <div class="wrapper">
+                              <div id="minimize"><i class="fa fa-circle"></i><i class="fa fa-window-minimize"></i></div>
+                              <div id="maximize"><i class="fa fa-circle"></i><i class="fa fa-window-maximize"></i></div>
+                              <div id="close"><i class="fa fa-circle"></i><i class="fa fa-window-close"></i></div>
+                            </div>
+                          </div>
+                          
+                    
+        
+                    </section>
+               
+                    
+               
+               
+               
+                        </section>
+                <section class="footer">
+                    <!-- footer -->
+                </section>
+                <!--/c-mask-->
+                <div id="c-mask" class="c-mask"></div>
+            </div>
+    
+</body>
+</html>

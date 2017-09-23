@@ -1,0 +1,7 @@
+npm install electron -g --verbose --save
+npm install electron-packager --save-dev
+
+
+npm run package-mac
+npm run package-win
+npm run package-linux
